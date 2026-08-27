@@ -71,22 +71,68 @@
         }
 
         .hero {
-            min-height: 80vh;
+            min-height: 85vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            padding: 80px 0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: auto;
         }
 
         .hero h1 {
             font-size: 5rem;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
 
         .hero p {
-            max-width: 600px;
+            max-width: 650px;
             margin: auto;
             color: #AEB9C4;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 28px;
+            color: #AEB9C4;
+            flex-wrap: wrap;
+        }
+
+        .hero-meta span {
+            color: #E8EDF2;
+            font-weight: 500;
+        }
+
+        .hero-ctas {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 35px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #E8352B;
+            color: #0B0F14;
+            padding: 14px 28px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .btn-ghost {
+            border: 1px solid #252c35;
+            color: #E8EDF2;
+            padding: 14px 28px;
+            border-radius: 25px;
+            font-weight: bold;
         }
 
         footer {
@@ -121,13 +167,24 @@
     <!-- Hero -->
 
     <section class="hero">
-        <div class="container">
-            <h1>NEXORA</h1>
-            <p>
-                A beginner-friendly technology workshop designed to help students explore different technology domains from the basics.
-            </p>
+         <div class="container hero-content">
+         <h1>NEXORA</h1>
+         <p>
+            A beginner-friendly technology workshop that helps students explore Web Development, App Development, Machine Learning, Designing, and Data Structures & Algorithms from the basics.
+        </p>
+
+        <div class="hero-meta">
+            <div>📍 <span>Ghaziabad, India · On campus</span></div>
+            <div>🗓 <span>September 1, 2026</span></div>
+            <div>⏱ <span>4:00 PM – 7:00 PM IST</span></div>
         </div>
-    </section>
+
+        <div class="hero-ctas">
+            <a href="#register" class="btn-primary">Reserve your seat</a>
+            <a href="#agenda" class="btn-ghost">View agenda</a>
+        </div>
+    </div>
+</section>
 
     <!-- Overview -->
 
