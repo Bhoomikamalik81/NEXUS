@@ -88,6 +88,118 @@
 
         }
 
+        /* Overview */
+
+        .overview {
+            padding: 70px 0;
+            border-bottom: 1px solid #252c35;
+        }
+
+        .overview-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: space-between;
+        }
+
+        .overview-item {
+            flex: 1 1 200px;
+        }
+
+        .overview-item .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #FF6B5C;
+        }
+
+        .overview-item .label {
+            color: #6C7A89;
+            font-size: 0.9rem;
+            margin-top: 6px;
+        }
+
+        /* Mentors */
+
+        .section-head {
+            max-width: 640px;
+            margin-bottom: 50px;
+        }
+
+        .section-tag {
+            color: #2E5CFF;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            display: block;
+    }
+
+        .section-head h2 {
+            font-size: 2.5rem;
+        }
+
+        .section-head p {
+            color: #AEB9C4;
+            margin-top: 16px;
+        }
+
+        .mentor-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .mentor-card {
+            flex: 1 1 250px;
+            min-width: 220px;
+            background: #111820;
+            border: 1px solid #252c35;
+            border-radius: 20px;
+            padding: 28px 24px;
+        }
+
+        .mentor-card:hover {
+            transform: translateY(-5px);
+            border-color: #E8352B;
+        }
+
+        .avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #E8352B;
+            color: #0B0F14;
+            font-weight: bold;
+        }
+
+        .mentor-card h3 {
+            font-size: 1.15rem;
+        }
+
+        .mentor-role {
+            color: #6C7A89;
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+
+        .mentor-topic {
+            margin-top: 18px;
+            padding-top: 18px;
+            border-top: 1px solid #252c35;
+            color: #AEB9C4;
+            font-size: 0.85rem;
+        }
+
+        .mentor-topic .tag {
+            display: block;
+            color: #FF6B5C;
+            font-size: 0.72rem;
+            margin-bottom: 6px;
+        }
+
         /* Background texture */
 
         .halftone {
@@ -259,24 +371,42 @@
                 A beginner-friendly technology workshop that helps students explore Web Development, App Development, Machine Learning, Designing, and Data Structures & Algorithms from the basics.
             </p>
 
-        <div class="hero-meta">
-            <div>📍 <span>Ghaziabad, India · On campus</span></div>
-            <div>🗓 <span>September 1, 2026</span></div>
-            <div>⏱ <span>4:00 PM – 7:00 PM IST</span></div>
-        </div>
+            <div class="hero-meta">
+                <div>📍 <span>Ghaziabad, India · On campus</span></div>
+                <div>🗓 <span>September 1, 2026</span></div>
+                <div>⏱ <span>4:00 PM – 7:00 PM IST</span></div>
+            </div>
 
-        <div class="hero-ctas">
-            <a href="#register" class="btn-primary">Reserve your seat</a>
-            <a href="#agenda" class="btn-ghost">View agenda</a>
+            <div class="hero-ctas">
+                <a href="#register" class="btn-primary">Reserve your seat</a>
+                <a href="#agenda" class="btn-ghost">View agenda</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Overview -->
 
-    <section id="overview">
-        <div class="container">
-            <h2>Overview</h2>
+    <section class="overview" id="overview">
+        <div class="container overview-grid">
+            <div class="overview-item">
+                <div class="number">5</div>
+                <div class="label">Domains & DSA covered</div>
+            </div>
+
+            <div class="overview-item">
+                <div class="number">12</div>
+                <div class="label">Hands-on sessions</div>
+            </div>
+
+            <div class="overview-item">
+                <div class="number">300</div>
+                <div class="label">Seats, on campus</div>
+            </div>
+
+            <div class="overview-item">
+                <div class="number">1</div>
+                <div class="label">Day, zero to confident</div>
+            </div>
         </div>
     </section>
 
@@ -284,8 +414,54 @@
 
     <section id="mentors">
         <div class="container">
-            <h2>Mentors</h2>
-        </div>
+            <div class="section-head">
+                <span class="section-tag">// Mentors</span>
+                <h2>Learn from people who'll actually sit with you and debug</h2>
+                <p>One mentor per domain, teaching from the absolute basics. Every session is hands-on, not just slides.</p>
+            </div>
+
+            <div class="mentor-grid">
+                <div class="mentor-card">
+                    <div class="avatar">WD</div>
+                    <h3>Web Development</h3>
+                    <div class="mentor-role">HTML & CSS to your first live website</div>
+                    <div class="mentor-topic">
+                        <span class="tag">COVERS</span>
+                        HTML, CSS, responsive layout, deploying your first page
+                    </div>
+                </div>
+            </div>
+
+            <div class="mentor-card">
+                <div class="avatar">AD</div>
+                <h3>App Development</h3>
+                <div class="mentor-role">From install to your first working app</div>
+                <div class="mentor-topic">
+                    <span class="tag">COVERS</span>
+                    App basics, screens & navigation, building on your phone
+                </div>
+            </div>
+
+            <div class="mentor-card">
+                <div class="avatar">ML</div>
+                <h3>Machine Learning</h3>
+                <div class="mentor-role">Python basics through your first model</div>
+                <div class="mentor-topic">
+                    <span class="tag">COVERS</span>
+                    Python essentials, data basics, training a simple model
+                </div>
+            </div>
+
+            <div class="mentor-card">
+                <div class="avatar">DS</div>
+                <h3>Designing</h3>
+                <div class="mentor-role">Design thinking for people who "can't design"</div>
+                <div class="mentor-topic">
+                    <span class="tag">COVERS</span>
+                    Layout, color, typography, your first UI mockup
+                </div>
+            </div>
+        </div>    
     </section>
 
     <!-- Agenda -->
