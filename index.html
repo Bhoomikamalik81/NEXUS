@@ -308,6 +308,43 @@
             border-top: 1px solid #252c35;
             padding: 40px 0;
         }
+        /* Agenda */
+
+        .agenda {
+            border-top: 1px solid #252c35;
+        }
+
+        .agenda-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .agenda-item {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 22px 24px;
+            background: #111820;
+            border: 1px solid #252c35;
+            border-radius: 16px;
+        }
+
+        .agenda-time {
+            min-width: 100px;
+            color: #FF6B5C;
+            font-weight: bold;
+        }
+
+        .agenda-item h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .agenda-item p {
+            color: #6C7A89;
+            font-size: 0.85rem;
+        }
     </style>
 </head>
 <body>
@@ -466,9 +503,55 @@
 
     <!-- Agenda -->
 
-    <section id="agenda">
+    <section class="agenda" id="agenda">
         <div class="container">
-            <h2>Agenda</h2>
+            <div class="section-head">
+                <span class="section-tag">// Agenda</span>
+                <h2>A day built to take you from curious to confident</h2>
+                <p>Each session focuses on practical learning, guided by mentors, and hands-on exploration.</p>
+            </div>
+
+            <div class="agenda-list">
+                <div class="agenda-item">
+                    <div class="agenda-time">04:00 PM</div>
+                    <div>
+                        <h3>Welcome & Introduction</h3>
+                        <p>Meet the mentors, understand the workshop and get started.</p>
+                    </div>
+                </div>
+
+                <div class="agenda-item">
+                    <div class="agenda-time">04:30 PM</div>
+                    <div>
+                        <h3>Web Development</h3>
+                        <p>Learn the basics of HTML, CSS and building your first webpage.</p>
+                    </div>
+                </div>
+
+                <div class="agenda-item">
+                    <div class="agenda-time">05:15 PM</div>
+                    <div>
+                        <h3>App Development</h3>
+                        <p>Explore app fundamentals, screens and navigation.</p>
+                    </div>
+                </div>
+
+                <div class="agenda-item">
+                    <div class="agenda-time">06:00 PM</div>
+                    <div>
+                        <h3>Machine Learning & Designing</h3>
+                        <p>Get introduced to ML concepts and the fundamentals of UI design.</p>
+                    </div>
+                </div>
+
+                <div class="agenda-item">
+                <div class="agenda-time">06:45 PM</div>
+                    <div>
+                        <h3>DSA & Closing</h3>
+                        <p>Explore problem solving with DSA and wrap up the workshop.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
