@@ -345,6 +345,48 @@
             color: #6C7A89;
             font-size: 0.85rem;
         }
+
+        /* Domains */
+
+        .domains {
+            border-top: 1px solid #252c35;
+        }
+
+        .domain-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .domain-card {
+            flex: 1 1 220px;
+            background: #111820;
+            border: 1px solid #252c35;
+            border-radius: 20px;
+            padding: 28px 24px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .domain-card:hover {
+            transform: translateY(-5px);
+            border-color: #2E5CFF;
+        }
+
+        .domain-icon {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .domain-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .domain-card p {
+            color: #6C7A89;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -557,9 +599,45 @@
 
     <!-- Domains -->
 
-    <section id="domains">
+    <section class="domains" id="domains">
         <div class="container">
-            <h2>Domains</h2>
+            <div class="section-head">
+                <span class="section-tag">// Domains</span>
+                <h2>Choose your path and start building</h2>
+                <p>Explore different technology domains and find the one that interests you the most.</p>
+            </div>
+
+            <div class="domain-grid">
+                <div class="domain-card">
+                    <div class="domain-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Build websites using HTML, CSS and responsive design fundamentals.</p>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon">📱</div>
+                    <h3>App Development</h3>
+                    <p>Understand app basics, screens, navigation and mobile development.</p>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon">🤖</div>
+                    <h3>Machine Learning</h3>
+                    <p>Learn Python, data basics and the fundamentals of machine learning.</p>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon">🎨</div>
+                    <h3>Designing</h3>
+                    <p>Explore layout, typography, colors and the basics of UI design.</p>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon">🧩</div>
+                    <h3>DSA</h3>
+                    <p>Develop problem-solving skills through data structures and algorithms.</p>
+                </div>
+            </div>
         </div>
     </section>
 
