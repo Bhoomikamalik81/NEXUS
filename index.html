@@ -387,6 +387,80 @@
             font-size: 0.85rem;
             line-height: 1.6;
         }
+
+        /* Registration */
+
+    .registration {
+        border-top: 1px solid #252c35;
+    }
+
+    .registration-box {
+        max-width: 650px;
+        margin: auto;
+        padding: 35px;
+        background: #111820;
+        border: 1px solid #252c35;
+        border-radius: 20px;
+    }
+
+    .registration-form {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-group label {
+        color: #E8EDF2;
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        padding: 13px 14px;
+        background: #0B0F14;
+        color: #E8EDF2;
+        border: 1px solid #252c35;
+        border-radius: 10px;
+        font-size: 0.95rem;
+        outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+        border-color: #E8352B;
+    }
+
+    .form-group input::placeholder {
+        color: #6C7A89;
+    }
+
+    .registration-submit {
+        padding: 14px;
+        background: #E8352B;
+        color: #0B0F14;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .registration-submit:hover {
+        background: #FF6B5C;
+    }
+
+    .form-note {
+        color: #6C7A89;
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
     </style>
 </head>
 <body>
@@ -643,9 +717,60 @@
 
     <!-- Registration -->
 
-    <section id="register">
+    <section class="registration" id="register">
         <div class="container">
-            <h2>Register for NEXORA</h2>
+            <div class="section-head">
+                <span class="section-tag">// Registration</span>
+                <h2>Save your spot at NEXORA</h2>
+                <p>Fill in your details to register your interest in the workshop.</p>
+            </div>
+
+            <div class="registration-box">
+                <form class="registration-form" onsubmit="event.preventDefault(); alert('This is a frontend demo. Your details have not been saved.');">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="college">College / Institution</label>
+                        <input type="text" id="college" name="college" placeholder="Enter your college name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">Current Year of Study</label>
+                        <select id="year" name="year" required>
+                            <option value="">Select your year</option>
+                            <option value="1st Year">1st Year</option>
+                            <option value="2nd Year">2nd Year</option>
+                            <option value="3rd Year">3rd Year</option>
+                            <option value="4th Year">4th Year</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="domain">Choose Your Interested Domain</label>
+                        <select id="domain" name="domain" required>
+                            <option value="">Select a domain</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="App Development">App Development</option>
+                            <option value="Machine Learning">Machine Learning</option>
+                            <option value="Designing">Designing</option>
+                            <option value="DSA">Data Structures & Algorithms</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="registration-submit">Submit Registration</button>
+
+                    <p class="form-note">This is currently a frontend demo. Your details will not be stored until a backend is connected.</p>
+                </form>
+            </div>
         </div>
     </section>
 
